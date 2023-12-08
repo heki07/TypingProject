@@ -27,7 +27,7 @@ const timeTag = document.querySelector(".time span b")
 const mistakeTag = document.querySelector(".mistake span")
 const wpmTag = document.querySelector(".wpm span")
 const cpmTag = document.querySelector(".cpm span")
-const accuracytag = document.querySelector(".accuracy span")
+const accuracyTag = document.querySelector(".accuracy span")
 
 let timer;
 let maxTime = 60;
