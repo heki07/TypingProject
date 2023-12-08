@@ -135,11 +135,6 @@ body {
     align-items: center;
 }
 
-.result-details li:not(:first-child) {
-    padding-left: 22px;
-    border-left: 2px solid #bfbfbf;
-}
-
 .result-details li p {
     font-size: 13px;
 }
