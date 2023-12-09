@@ -14,6 +14,7 @@ var groundControlImage;
 function preload() {
   groundControlImage = loadImage('tank.png'); // Replace with the path to your ground control image
 }
+let bestScore = 0;
 
 function setup() {
 
@@ -192,9 +193,6 @@ function resetGame() {
   exitButton.style.display = 'none';
 }
 function exitHandler() {
-  // Perform any cleanup or additional actions here
-
-  // For now, let's simply redirect the user to another page
   window.location.href = 'home.html';
 }
 function exitGame() {
