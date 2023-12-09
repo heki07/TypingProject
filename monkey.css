@@ -4,7 +4,8 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(#007acc, #6DD5FA, #FFFFFF);
+    background-color: #646669;
+
 }
 
 .result-details {
@@ -19,16 +20,12 @@ body {
 .wrapper {
     width: 700px;
     padding: 35px;
-    background: #1e1e1e;
+
     border-radius: 10px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
 }
 
-.wrapper .input-field {
-    opacity: 0;
-    z-index: -999;
-    position: absolute;
-}
+
 
 .wrapper .content-box {
     padding: 13px 20px 0;
@@ -240,5 +237,10 @@ a.button:hover {
 
 #paragraph {
     font-family: 'sans-serif';
-    color: #646669;
+    color: #212222;
+}
+.wrapper .input-field {
+    opacity: 0;
+    z-index: -999;
+    position: absolute;
 }
