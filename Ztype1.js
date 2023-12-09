@@ -14,7 +14,6 @@ var groundControlImage;
 function preload() {
   groundControlImage = loadImage('tank.png'); // Replace with the path to your ground control image
 }
-let bestScore = 0;
 
 function setup() {
 
