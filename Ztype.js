@@ -14,7 +14,7 @@ var groundControlImage;
 function preload() {
   groundControlImage = loadImage('tank.png'); // Replace with the path to your ground control image
 }
-
+let bestScore = 0;
 
 function setup() {
 
@@ -189,14 +189,30 @@ function resetGame() {
   loop();
   var resetButton = document.getElementById('resetButton');
   resetButton.style.display = 'none';
+  var exitButton = document.getElementById('exitButton');
+  exitButton.style.display = 'none';
 }
+function exitHandler() {
+  // Perform any cleanup or additional actions here
 
+  // For now, let's simply redirect the user to another page
+  window.location.href = 'home.html';
+}
+function exitGame() {
+  exitHandler();
+}
 /**
  * stops loop, draws game over message
  */
 function endGame() {
-
   noLoop();
 
-  document.getElementById('resetButton').style.display = 'inline';
-}
+  // Show the "Exit" and "Reset" buttons
+  var exitButton = document.getElementById('exitButton');
+  var resetButton = document.getElementById('resetButton');
+  if (exitButton && resetButton) {
+    exitButton.style.display = 'inline';
+    resetButton.style.display = 'inline';
+  }
+
+} 
